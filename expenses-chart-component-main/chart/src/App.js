@@ -8,10 +8,18 @@ import {
   YAxis,
   Tooltip,
   Legend,
+  Cell,
 } from "recharts";
 
 function App() {
-  console.log(data);
+  const colors = [
+    "hsl(25, 47%, 15%)",
+    "hsl(28, 10%, 53%)",
+    "hsl(27, 66%, 92%)",
+    "hsl(33, 100%, 98%)",
+    "hsl(10, 79%, 65%)",
+    "hsl(186, 34%, 60%)",
+  ];
   return (
     <div className="app">
       <div className="content-wrapper">
@@ -40,7 +48,7 @@ function App() {
                   dataKey="value"
                   fill="rgb(228, 98, 28)"
                   radius={[10, 10, 10, 10]}
-                />
+                ></Bar>
                 {/* <Bar datakey="uv" fill="#82ca9d" /> */}
               </BarChart>
             </ResponsiveContainer>
