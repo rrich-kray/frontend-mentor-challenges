@@ -1,4 +1,4 @@
-.nav {
+#nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,33 +6,40 @@
     height: 10%;
     min-height: 10%;
     position: fixed;
-    background: transparent
+    background: transparent;
+    z-index: 999;
+    backdrop-filter: blur(10px)
+
 }
 
-.left-panel {
+#nav > .left-panel {
     height: 100%;
-    width: 40%;
+    width: 50%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.right-panel {
+#nav > .left-panel span {
+    color: var(--primary-clr-1);
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 10rem;
+}
+
+#nav > .right-panel {
     height: 100%;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left-panel span {
-    color: var(--primary-clr-1);
-    font-size: 2rem;
-    font-weight: bold;
-}
 
-.right-panel button {
+#nav > .right-panel button {
     background: var(--primary-clr-1);
     color: white;
     border-radius: 30px;

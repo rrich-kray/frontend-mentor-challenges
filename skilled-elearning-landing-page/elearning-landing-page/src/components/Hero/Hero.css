@@ -1,5 +1,5 @@
 #hero {
-    height: 50%;
+    height: 100%;
     min-height: 40%;
     width: 100%;
     display: flex;
@@ -11,51 +11,61 @@
 }
 
 #hero > .left-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative
 }
 
 #hero > .left-panel > .content-container {
     height: 75%;
-    width: 75%;
+    width: 60%;
+    position: absolute;
+    bottom: 4rem;
+    left: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#hero > .right-panel > img {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#hero > .left-panel > img {
-    max-height: 100%;
-    max-width: 100%;
-}
-
 .content-container :nth-child(1) {
-    font-size: 3rem;
-    margin-bottom: 30px
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: var(--primary-clr-1);
+    font-weight: bold
 }
 
 .content-container :nth-child(2) {
     color: rgba(100, 100, 100, 0.75);
-    margin-bottom: 20px
+    margin-bottom: 30px;
+    /* width: 4rem; */
 }
 
 .content-container :nth-child(3) {
-    border-radius: 20px;
-    height: 2.5rem;
-    width: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content-container > .btn-container > button {
+    border-radius: 40px;
+    font-size: 1.25rem;
+    height: 4rem;
+    width: 9rem;
     color: white;
     border: none;
     background: #ff9966;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
+}
 
+#hero > .right-panel {
+    position: relative;
+}
+
+#hero > .right-panel > img {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    height: 120%;
+    width: auto ;
+    /* max-height: 100%; */
 }

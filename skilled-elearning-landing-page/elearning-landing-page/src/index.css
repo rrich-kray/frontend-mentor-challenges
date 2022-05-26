@@ -19,7 +19,7 @@ code {
 }
 
 :root {
-  font-size: 15px;
+  font-size: 19px;
   --primary-clr-1: rgb(7, 16, 104);
   --primary-clr-2: #8A2387; 
   --primary-clr-3: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
