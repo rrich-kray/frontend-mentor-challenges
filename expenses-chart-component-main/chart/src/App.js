@@ -36,7 +36,11 @@ function App() {
                 <XAxis datakey="name" axisLine={false} ticks={false} />
                 {/* <YAxis datakey="amount" /> */}
                 <Tooltip />
-                <Bar dataKey="value" fill="rgb(228, 98, 28)" />
+                <Bar
+                  dataKey="value"
+                  fill="rgb(228, 98, 28)"
+                  radius={[10, 10, 10, 10]}
+                />
                 {/* <Bar datakey="uv" fill="#82ca9d" /> */}
               </BarChart>
             </ResponsiveContainer>
